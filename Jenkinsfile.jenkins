@@ -51,7 +51,7 @@ pipeline  {
             steps {
                 echo " ============== starting frontend =================="
                 sh '''
-                docker run -d --restart=always --name front_end -p 80:3000 zozipo/front_end:latest
+                docker run -d --restart=always --name back_end -p 8080:8080 zozipo/back_end:latest
                 '''
             }
         }
