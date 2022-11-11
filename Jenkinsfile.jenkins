@@ -42,7 +42,7 @@ pipeline  {
             steps {
                 echo " ============== pushing image =================="
                 sh '''
-                docker push zozipo/front_end:latest
+                docker push zozipo/back_end:latest
                 '''
             }
         }
