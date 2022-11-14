@@ -17,6 +17,8 @@ pipeline  {
                 echo 'Removing image ...'
                  dir('.'){
                     sh "docker rmi zozipo/back_end -f"
+                    sh "docker stop back_end"
+                    sh "docker rm back_end"
                 }
             }
         }
